@@ -1,0 +1,13 @@
+{
+   "serialport":"COM6",
+   "files": [
+      {  
+         "DestinationFilePath": "I:\\System.Device.Wifi.pe",
+         "SourceFilePath": "C:\\Src\\TestAppWIFI\\scripts\\Libs\\System.Device.Wifi.pe"
+      },
+      {  
+         "DestinationFilePath": "I:\\Plugin.pe",
+         "SourceFilePath": "C:\\Src\\TestAppWIFI\\Plugin\\bin\\Debug\\Plugin.pe"
+      }
+   ]
+}
