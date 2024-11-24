@@ -10,6 +10,8 @@ namespace Plugin
 {
     public class Program
     {
+        private const string VALUE_SSID = ""; //PUT HERE YOUR WIFI CREDENTIALS
+        private const string VALUE_PASSWORD = "";
         private static ILogger _logger;
         public static void Main()
         {
@@ -68,8 +70,8 @@ namespace Plugin
         private static bool ConnectToDHCP(int TimeOut = 60_000)
         {
             WriteToConsole("Connectiong to WIFI from engine....");
-            var ssid = "";
-            var password = "";
+            var ssid = VALUE_SSID;
+            var password = VALUE_PASSWORD;
 
             if (string.IsNullOrEmpty(ssid)) { throw new Exception("Empty SID"); }
 

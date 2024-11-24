@@ -23,6 +23,11 @@ namespace Engine
     public class Program
     {
         private const int DEBUG_DELAY = 2000;
+#if ENGINE_SIDE
+        private const string VALUE_SSID = ""; //PUT HERE YOUR WIFI CREDENTIALS
+        private const string VALUE_PASSWORD = "";
+#endif
+
 #if CustomLogger
         private static Logger.Logger _logger;
 #else
