@@ -162,7 +162,7 @@ namespace Engine
 #if ENGINE_SIDE
         private static bool ConnectToDHCP(int TimeOut = 60_000)
         {
-            WriteToConsole("Connectiong to WIFI from engine....");
+            WriteToConsole("Connecting to WIFI from engine....");
             var ssid = "";
             var password = "";
 
@@ -178,7 +178,7 @@ namespace Engine
 
         private static void DisconnectFromWIFI()
         {
-            WriteToConsole("Disconnectiong...");
+            WriteToConsole("Disconnecting...");
             WifiNetworkHelper.Disconnect();
             WriteToConsole($"Disconnected. Status: {WifiNetworkHelper.Status}");
         }

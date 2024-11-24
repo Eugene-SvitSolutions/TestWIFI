@@ -33,7 +33,7 @@ namespace Plugin
 
                 WriteToConsole($"PLUGIN ver.:{Assembly.GetExecutingAssembly().GetName().Version}");
 
-                WriteToConsole("Disconnectiong from wifi...");
+                WriteToConsole("Disconnecting from wifi...");
                 Thread.Sleep(1);
                 DisconnectFromWIFI();
                 Thread.Sleep(1);
@@ -69,7 +69,7 @@ namespace Plugin
 
         private static bool ConnectToDHCP(int TimeOut = 60_000)
         {
-            WriteToConsole("Connectiong to WIFI from engine....");
+            WriteToConsole("Connecting to WIFI from engine....");
             var ssid = VALUE_SSID;
             var password = VALUE_PASSWORD;
 
@@ -85,7 +85,7 @@ namespace Plugin
 
         private static void DisconnectFromWIFI()
         {
-            WriteToConsole("Disconnectiong...");
+            WriteToConsole("Disconnecting...");
             WifiNetworkHelper.Disconnect();
             WriteToConsole($"Disconnected. Status: {WifiNetworkHelper.Status}");
         }
